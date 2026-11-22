@@ -19,3 +19,25 @@
 2026-11-22 02:15:12,635 - INFO - Reserva R04 creada.
 2026-11-22 02:15:12,635 - INFO - Reserva agregada al sistema.
 2026-11-22 02:15:12,635 - INFO - Reserva R04 cancelada.
+2026-11-22 02:26:36,162 - ERROR - Error en el menu: El correo electronico no es valido.
+2026-11-22 02:31:16,847 - INFO - Cliente registrado: Carlos Perez
+2026-11-22 02:31:16,847 - INFO - Cliente agregado al sistema.
+2026-11-22 02:31:16,848 - ERROR - OPERACION 2: Registrar cliente con correo invalido: El correo electronico no es valido.
+2026-11-22 02:31:16,848 - INFO - Cliente registrado: Ana Rodriguez
+2026-11-22 02:31:16,848 - INFO - Cliente agregado al sistema.
+2026-11-22 02:31:16,849 - INFO - Servicio agregado: Sala de reuniones
+2026-11-22 02:31:16,849 - INFO - Servicio agregado: Computador portatil
+2026-11-22 02:31:16,850 - INFO - Servicio agregado: Asesoria informatica
+2026-11-22 02:31:16,850 - ERROR - OPERACION 7: Crear servicio con tarifa incorrecta: La tarifa debe ser un numero mayor que cero.
+2026-11-22 02:31:16,851 - INFO - Reserva R01 creada.
+2026-11-22 02:31:16,851 - INFO - Reserva agregada al sistema.
+2026-11-22 02:31:16,851 - INFO - Reserva R01 confirmada.
+2026-11-22 02:31:16,852 - INFO - Reserva R01 procesada.
+2026-11-22 02:31:16,854 - ERROR - OPERACION 11: Crear reserva con duracion incorrecta: El tiempo de alquiler debe ser mayor que cero.
+2026-11-22 02:31:16,855 - INFO - Servicio agregado: Asesoria avanzada
+2026-11-22 02:31:16,855 - INFO - Reserva R03 creada.
+2026-11-22 02:31:16,855 - INFO - Reserva agregada al sistema.
+2026-11-22 02:31:16,855 - ERROR - OPERACION 12: Intentar reservar servicio no disponible: El servicio no se encuentra disponible.
+2026-11-22 02:31:16,856 - INFO - Reserva R04 creada.
+2026-11-22 02:31:16,856 - INFO - Reserva agregada al sistema.
+2026-11-22 02:31:16,857 - INFO - Reserva R04 cancelada.

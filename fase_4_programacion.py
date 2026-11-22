@@ -58,9 +58,6 @@ class Entidad(ABC):
 
         self._identificacion = identificacion.strip()
 
-    @property
-    def identificacion(self):
-        return self._identificacion
     @abstractmethod
     def mostrar_informacion(self):
         pass
@@ -99,7 +96,7 @@ class Cliente(Entidad):
 
     def mostrar_informacion(self):
         return (
-            f"Identificacion: {self._identificacion}\n"
+            f"Identificacion: {self.identificacion}\n"
             f"Nombre: {self.__nombre}\n"
             f"Correo: {self.__correo}\n"
             f"Telefono: {self.__telefono}"
@@ -167,7 +164,7 @@ class Servicio(Entidad):
 
     def mostrar_informacion(self):
         return (
-            f"Codigo: {self._identificacion}\n"
+            f"Codigo: {self.identificacion}\n"
             f"Servicio: {self.nombre}\n"
             f"Descripcion: {self.descripcion()}\n"
             f"Tarifa por hora: ${self.tarifa:,.2f}\n"
@@ -239,6 +236,7 @@ class Reserva(Entidad):
 
         logging.info("Reserva %s creada.", identificacion)
 
+
     def confirmar(self, impuesto=0, descuento=0):
         if self.estado != "Pendiente":
             raise ReservaError("Solamente se pueden confirmar reservas pendientes.")
@@ -256,7 +254,7 @@ class Reserva(Entidad):
             ) from error
 
         self.estado = "Confirmada"
-        logging.info("Reserva %s confirmada.", self._identificacion)
+        logging.info("Reserva %s confirmada.", self.identificacion)
         return self.costo
 
    
@@ -267,7 +265,7 @@ class Reserva(Entidad):
 
         self.estado = "Cancelada"
 
-        logging.info("Reserva %s cancelada.", self._identificacion)
+        logging.info("Reserva %s cancelada.", self.identificacion)
 
     def procesar(self):
 
@@ -276,12 +274,12 @@ class Reserva(Entidad):
 
         self.estado = "Procesada"
 
-        logging.info("Reserva %s procesada.", self._identificacion)
+        logging.info("Reserva %s procesada.", self.identificacion)
 
     def mostrar_informacion(self):
 
         return (
-            f"Reserva: {self._identificacion}\n"
+            f"Reserva: {self.identificacion}\n"
             f"Cliente: {self.cliente.nombre}\n"
             f"Servicio: {self.servicio.nombre}\n"
             f"Duracion: {self.duracion} horas\n"
@@ -306,7 +304,7 @@ class GestorSistema:
         if not isinstance(cliente, Cliente):
             raise DatoInvalidoError("El objeto no es un cliente valido.")
 
-        if any(c._identificacion == cliente._identificacion for c in self.clientes):
+        if any(c.identificacion == cliente.identificacion for c in self.clientes):
             raise DatoInvalidoError("El cliente ya se encuentra registrado.")
 
         self.clientes.append(cliente)
@@ -317,7 +315,7 @@ class GestorSistema:
         if not isinstance(servicio, Servicio):
             raise DatoInvalidoError("El objeto no es un servicio valido.")
 
-        if any(s._identificacion == servicio._identificacion for s in self.servicios):
+        if any(s.identificacion == servicio.identificacion for s in self.servicios):
             raise DatoInvalidoError("El servicio ya se encuentra registrado.")
 
         self.servicios.append(servicio)
@@ -328,7 +326,7 @@ class GestorSistema:
         if not isinstance(reserva, Reserva):
             raise DatoInvalidoError("La reserva no es valida.")
 
-        if any(r._identificacion == reserva._identificacion for r in self.reservas):
+        if any(r.identificacion == reserva.identificacion for r in self.reservas):
             raise DatoInvalidoError("El codigo de reserva ya existe.")
 
         if reserva.cliente not in self.clientes:
@@ -628,12 +626,12 @@ def menu_principal():
 
                 cliente = next(
                     (c for c in sistema.clientes
-                     if c._identificacion == identificacion), None
+                     if c.identificacion == identificacion), None
                 )
 
                 servicio = next(
                     (s for s in sistema.servicios
-                     if s._identificacion == codigo_servicio), None
+                     if s.identificacion == codigo_servicio), None
                 )
 
                 if cliente is None:
@@ -653,7 +651,7 @@ def menu_principal():
 
                 reserva = next(
                     (r for r in sistema.reservas
-                     if r._identificacion == codigo), None
+                     if r.identificacion == codigo), None
                 )
 
                 if reserva is None:
@@ -673,7 +671,7 @@ def menu_principal():
 
                 reserva = next(
                     (r for r in sistema.reservas
-                     if r._identificacion == codigo), None
+                     if r.identificacion == codigo), None
                 )
 
                 if reserva is None:
