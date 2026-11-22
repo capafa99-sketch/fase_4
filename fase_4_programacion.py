@@ -237,23 +237,26 @@ class Reserva(Entidad):
         logging.info("Reserva %s creada.", identificacion)
 
     def confirmar(self, impuesto=0, descuento=0):
-
         if self.estado != "Pendiente":
             raise ReservaError("Solamente se pueden confirmar reservas pendientes.")
-
+        
         if not self.servicio.disponible:
             raise ServicioNoDisponibleError("El servicio no se encuentra disponible.")
 
-        self.costo = self.servicio.calcular_costo(
-            self.duracion, impuesto, descuento
-        )
+        try:
+            self.costo = self.servicio.calcular_costo(
+                self.duracion, impuesto, descuento
+            )
+        except DatoInvalidoError as error:
+            raise ReservaError(
+                "No se pudo calcular el costo de la reserva."
+            ) from error
 
         self.estado = "Confirmada"
-
         logging.info("Reserva %s confirmada.", self._identificacion)
-
         return self.costo
 
+   
     def cancelar(self):
 
         if self.estado == "Cancelada":
