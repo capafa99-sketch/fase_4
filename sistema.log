@@ -41,3 +41,1040 @@
 2026-11-22 02:31:16,856 - INFO - Reserva R04 creada.
 2026-11-22 02:31:16,856 - INFO - Reserva agregada al sistema.
 2026-11-22 02:31:16,857 - INFO - Reserva R04 cancelada.
+2026-11-22 02:36:08,026 - INFO - Cliente registrado: Carlos Perez
+2026-11-22 02:36:08,027 - INFO - Cliente agregado al sistema.
+2026-11-22 02:36:08,027 - ERROR - OPERACION 1: Registrar cliente valido: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 410, in prueba_1
+    print(cliente1.mostrar_informacion())
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 99, in mostrar_informacion
+    f"Identificacion: {self.identificacion}\n"
+                       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Cliente' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 02:36:08,029 - ERROR - OPERACION 2: Registrar cliente con correo invalido: El correo electronico no es valido.
+2026-11-22 02:36:08,030 - INFO - Cliente registrado: Ana Rodriguez
+2026-11-22 02:36:08,030 - ERROR - OPERACION 3: Registrar segundo cliente: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 433, in prueba_3
+    sistema.registrar_cliente(cliente2)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 307, in registrar_cliente
+    if any(c.identificacion == cliente.identificacion for c in self.clientes):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 307, in <genexpr>
+    if any(c.identificacion == cliente.identificacion for c in self.clientes):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'Cliente' object has no attribute 'identificacion'
+2026-11-22 02:36:08,031 - INFO - Servicio agregado: Sala de reuniones
+2026-11-22 02:36:08,031 - ERROR - OPERACION 4: Crear servicio de salas: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 444, in prueba_4
+    print(sala.mostrar_informacion())
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 167, in mostrar_informacion
+    f"Codigo: {self.identificacion}\n"
+               ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 02:36:08,034 - ERROR - OPERACION 5: Crear servicio de equipos: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 453, in prueba_5
+    sistema.registrar_servicio(equipo)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:36:08,037 - ERROR - OPERACION 6: Crear servicio de asesoria: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 463, in prueba_6
+    sistema.registrar_servicio(asesoria)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:36:08,043 - ERROR - OPERACION 7: Crear servicio con tarifa incorrecta: La tarifa debe ser un numero mayor que cero.
+2026-11-22 02:36:08,043 - INFO - Reserva R01 creada.
+2026-11-22 02:36:08,044 - INFO - Reserva agregada al sistema.
+2026-11-22 02:36:08,044 - ERROR - OPERACION 8: Crear reserva correctamente: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 482, in prueba_8
+    print(reserva1.mostrar_informacion())
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 282, in mostrar_informacion
+    f"Reserva: {self.identificacion}\n"
+                ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Reserva' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 02:36:08,045 - ERROR - OPERACION 9: Confirmar reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 489, in prueba_9
+    costo = reserva1.confirmar(impuesto=19, descuento=10)
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 257, in confirmar
+    logging.info("Reserva %s confirmada.", self.identificacion)
+                                           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Reserva' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 02:36:08,046 - ERROR - OPERACION 10: Procesar reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 498, in prueba_10
+    reserva1.procesar()
+    ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 277, in procesar
+    logging.info("Reserva %s procesada.", self.identificacion)
+                                          ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Reserva' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 02:36:08,049 - ERROR - OPERACION 11: Crear reserva con duracion incorrecta: El tiempo de alquiler debe ser mayor que cero.
+2026-11-22 02:36:08,050 - ERROR - OPERACION 12: Intentar reservar servicio no disponible: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 515, in prueba_12
+    sistema.registrar_servicio(servicio)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:36:08,051 - INFO - Reserva R04 creada.
+2026-11-22 02:36:08,052 - ERROR - OPERACION 13: Cancelar una reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 529, in prueba_13
+    sistema.registrar_reserva(reserva)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 329, in registrar_reserva
+    if any(r.identificacion == reserva.identificacion for r in self.reservas):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 329, in <genexpr>
+    if any(r.identificacion == reserva.identificacion for r in self.reservas):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'Reserva' object has no attribute 'identificacion'
+2026-11-22 02:36:30,293 - INFO - Cliente registrado: Carlos Perez
+2026-11-22 02:36:30,322 - INFO - Cliente agregado al sistema.
+2026-11-22 02:36:30,323 - ERROR - OPERACION 1: Registrar cliente valido: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 410, in prueba_1
+    print(cliente1.mostrar_informacion())
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 99, in mostrar_informacion
+    f"Identificacion: {self.identificacion}\n"
+                       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Cliente' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 02:36:30,324 - ERROR - OPERACION 2: Registrar cliente con correo invalido: El correo electronico no es valido.
+2026-11-22 02:36:30,325 - INFO - Cliente registrado: Ana Rodriguez
+2026-11-22 02:36:30,325 - ERROR - OPERACION 3: Registrar segundo cliente: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 433, in prueba_3
+    sistema.registrar_cliente(cliente2)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 307, in registrar_cliente
+    if any(c.identificacion == cliente.identificacion for c in self.clientes):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 307, in <genexpr>
+    if any(c.identificacion == cliente.identificacion for c in self.clientes):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'Cliente' object has no attribute 'identificacion'
+2026-11-22 02:36:30,326 - INFO - Servicio agregado: Sala de reuniones
+2026-11-22 02:36:30,326 - ERROR - OPERACION 4: Crear servicio de salas: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 444, in prueba_4
+    print(sala.mostrar_informacion())
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 167, in mostrar_informacion
+    f"Codigo: {self.identificacion}\n"
+               ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 02:36:30,327 - ERROR - OPERACION 5: Crear servicio de equipos: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 453, in prueba_5
+    sistema.registrar_servicio(equipo)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:36:30,329 - ERROR - OPERACION 6: Crear servicio de asesoria: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 463, in prueba_6
+    sistema.registrar_servicio(asesoria)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:36:30,330 - ERROR - OPERACION 7: Crear servicio con tarifa incorrecta: La tarifa debe ser un numero mayor que cero.
+2026-11-22 02:36:30,331 - INFO - Reserva R01 creada.
+2026-11-22 02:36:30,331 - INFO - Reserva agregada al sistema.
+2026-11-22 02:36:30,331 - ERROR - OPERACION 8: Crear reserva correctamente: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 482, in prueba_8
+    print(reserva1.mostrar_informacion())
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 282, in mostrar_informacion
+    f"Reserva: {self.identificacion}\n"
+                ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Reserva' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 02:36:30,332 - ERROR - OPERACION 9: Confirmar reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 489, in prueba_9
+    costo = reserva1.confirmar(impuesto=19, descuento=10)
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 257, in confirmar
+    logging.info("Reserva %s confirmada.", self.identificacion)
+                                           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Reserva' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 02:36:30,333 - ERROR - OPERACION 10: Procesar reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 498, in prueba_10
+    reserva1.procesar()
+    ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 277, in procesar
+    logging.info("Reserva %s procesada.", self.identificacion)
+                                          ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Reserva' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 02:36:30,335 - ERROR - OPERACION 11: Crear reserva con duracion incorrecta: El tiempo de alquiler debe ser mayor que cero.
+2026-11-22 02:36:30,335 - ERROR - OPERACION 12: Intentar reservar servicio no disponible: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 515, in prueba_12
+    sistema.registrar_servicio(servicio)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:36:30,336 - INFO - Reserva R04 creada.
+2026-11-22 02:36:30,336 - ERROR - OPERACION 13: Cancelar una reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 529, in prueba_13
+    sistema.registrar_reserva(reserva)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 329, in registrar_reserva
+    if any(r.identificacion == reserva.identificacion for r in self.reservas):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 329, in <genexpr>
+    if any(r.identificacion == reserva.identificacion for r in self.reservas):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'Reserva' object has no attribute 'identificacion'
+2026-11-22 02:40:48,999 - ERROR - OPERACION 1: Registrar cliente valido: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 405, in prueba_1
+    cliente1 = Cliente(
+        "1001", "Carlos Perez",
+        "carlos@gmail.com", "3001234567"
+    )
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 72, in __init__
+    super().__init_(identificacion)
+    ^^^^^^^^^^^^^^^
+AttributeError: 'super' object has no attribute '_Cliente__init_'
+2026-11-22 02:40:49,001 - ERROR - OPERACION 2: Registrar cliente con correo invalido: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 417, in prueba_2
+    cliente = Cliente(
+        "1002", "Maria Lopez",
+        "correoIncorrecto", "3101234567"
+    )
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 72, in __init__
+    super().__init_(identificacion)
+    ^^^^^^^^^^^^^^^
+AttributeError: 'super' object has no attribute '_Cliente__init_'
+2026-11-22 02:40:49,002 - ERROR - OPERACION 3: Registrar segundo cliente: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 429, in prueba_3
+    cliente2 = Cliente(
+        "1003", "Ana Rodriguez",
+        "ana@gmail.com", "3114567890"
+    )
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 72, in __init__
+    super().__init_(identificacion)
+    ^^^^^^^^^^^^^^^
+AttributeError: 'super' object has no attribute '_Cliente__init_'
+2026-11-22 02:40:49,004 - INFO - Servicio agregado: Sala de reuniones
+2026-11-22 02:40:49,004 - ERROR - OPERACION 4: Crear servicio de salas: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 444, in prueba_4
+    print(sala.mostrar_informacion())
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 167, in mostrar_informacion
+    f"Codigo: {self.identificacion}\n"
+               ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 02:40:49,007 - ERROR - OPERACION 5: Crear servicio de equipos: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 453, in prueba_5
+    sistema.registrar_servicio(equipo)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:40:49,009 - ERROR - OPERACION 6: Crear servicio de asesoria: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 463, in prueba_6
+    sistema.registrar_servicio(asesoria)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:40:49,013 - ERROR - OPERACION 7: Crear servicio con tarifa incorrecta: La tarifa debe ser un numero mayor que cero.
+2026-11-22 02:40:49,014 - ERROR - OPERACION 8: Crear reserva correctamente: Debe seleccionar un cliente valido.
+2026-11-22 02:40:49,014 - ERROR - OPERACION 9: Confirmar reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 489, in prueba_9
+    costo = reserva1.confirmar(impuesto=19, descuento=10)
+            ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'confirmar'
+2026-11-22 02:40:49,016 - ERROR - OPERACION 10: Procesar reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 498, in prueba_10
+    reserva1.procesar()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'procesar'
+2026-11-22 02:40:49,016 - ERROR - OPERACION 11: Crear reserva con duracion incorrecta: Debe seleccionar un cliente valido.
+2026-11-22 02:40:49,017 - ERROR - OPERACION 12: Intentar reservar servicio no disponible: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 515, in prueba_12
+    sistema.registrar_servicio(servicio)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:40:49,021 - ERROR - OPERACION 13: Cancelar una reserva: Debe seleccionar un cliente valido.
+2026-11-22 02:42:43,521 - ERROR - OPERACION 1: Registrar cliente valido: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 405, in prueba_1
+    cliente1 = Cliente(
+        "1001", "Carlos Perez",
+        "carlos@gmail.com", "3001234567"
+    )
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 72, in __init__
+    super().__init_(identificacion)
+    ^^^^^^^^^^^^^^^
+AttributeError: 'super' object has no attribute '_Cliente__init_'
+2026-11-22 02:42:43,562 - ERROR - OPERACION 2: Registrar cliente con correo invalido: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 417, in prueba_2
+    cliente = Cliente(
+        "1002", "Maria Lopez",
+        "correoIncorrecto", "3101234567"
+    )
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 72, in __init__
+    super().__init_(identificacion)
+    ^^^^^^^^^^^^^^^
+AttributeError: 'super' object has no attribute '_Cliente__init_'
+2026-11-22 02:42:43,563 - ERROR - OPERACION 3: Registrar segundo cliente: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 429, in prueba_3
+    cliente2 = Cliente(
+        "1003", "Ana Rodriguez",
+        "ana@gmail.com", "3114567890"
+    )
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 72, in __init__
+    super().__init_(identificacion)
+    ^^^^^^^^^^^^^^^
+AttributeError: 'super' object has no attribute '_Cliente__init_'
+2026-11-22 02:42:43,564 - INFO - Servicio agregado: Sala de reuniones
+2026-11-22 02:42:43,564 - ERROR - OPERACION 4: Crear servicio de salas: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 444, in prueba_4
+    print(sala.mostrar_informacion())
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 167, in mostrar_informacion
+    f"Codigo: {self.identificacion}\n"
+               ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 02:42:43,565 - ERROR - OPERACION 5: Crear servicio de equipos: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 453, in prueba_5
+    sistema.registrar_servicio(equipo)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:42:43,568 - ERROR - OPERACION 6: Crear servicio de asesoria: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 463, in prueba_6
+    sistema.registrar_servicio(asesoria)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:42:43,570 - ERROR - OPERACION 7: Crear servicio con tarifa incorrecta: La tarifa debe ser un numero mayor que cero.
+2026-11-22 02:42:43,571 - ERROR - OPERACION 8: Crear reserva correctamente: Debe seleccionar un cliente valido.
+2026-11-22 02:42:43,571 - ERROR - OPERACION 9: Confirmar reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 489, in prueba_9
+    costo = reserva1.confirmar(impuesto=19, descuento=10)
+            ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'confirmar'
+2026-11-22 02:42:43,572 - ERROR - OPERACION 10: Procesar reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 498, in prueba_10
+    reserva1.procesar()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'procesar'
+2026-11-22 02:42:43,573 - ERROR - OPERACION 11: Crear reserva con duracion incorrecta: Debe seleccionar un cliente valido.
+2026-11-22 02:42:43,574 - ERROR - OPERACION 12: Intentar reservar servicio no disponible: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 515, in prueba_12
+    sistema.registrar_servicio(servicio)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:42:43,576 - ERROR - OPERACION 13: Cancelar una reserva: Debe seleccionar un cliente valido.
+2026-11-22 02:46:49,030 - ERROR - OPERACION 1: Registrar cliente valido: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 405, in prueba_1
+    cliente1 = Cliente(
+        "1001", "Carlos Perez",
+        "carlos@gmail.com", "3001234567"
+    )
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 72, in __init__
+    super().__init_(identificacion)
+    ^^^^^^^^^^^^^^^
+AttributeError: 'super' object has no attribute '_Cliente__init_'
+2026-11-22 02:46:49,032 - ERROR - OPERACION 2: Registrar cliente con correo invalido: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 417, in prueba_2
+    cliente = Cliente(
+        "1002", "Maria Lopez",
+        "correoIncorrecto", "3101234567"
+    )
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 72, in __init__
+    super().__init_(identificacion)
+    ^^^^^^^^^^^^^^^
+AttributeError: 'super' object has no attribute '_Cliente__init_'
+2026-11-22 02:46:49,033 - ERROR - OPERACION 3: Registrar segundo cliente: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 429, in prueba_3
+    cliente2 = Cliente(
+        "1003", "Ana Rodriguez",
+        "ana@gmail.com", "3114567890"
+    )
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 72, in __init__
+    super().__init_(identificacion)
+    ^^^^^^^^^^^^^^^
+AttributeError: 'super' object has no attribute '_Cliente__init_'
+2026-11-22 02:46:49,034 - INFO - Servicio agregado: Sala de reuniones
+2026-11-22 02:46:49,035 - ERROR - OPERACION 5: Crear servicio de equipos: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 453, in prueba_5
+    sistema.registrar_servicio(equipo)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:46:49,037 - ERROR - OPERACION 6: Crear servicio de asesoria: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 463, in prueba_6
+    sistema.registrar_servicio(asesoria)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:46:49,038 - ERROR - OPERACION 7: Crear servicio con tarifa incorrecta: La tarifa debe ser un numero mayor que cero.
+2026-11-22 02:46:49,039 - ERROR - OPERACION 8: Crear reserva correctamente: Debe seleccionar un cliente valido.
+2026-11-22 02:46:49,039 - ERROR - OPERACION 9: Confirmar reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 489, in prueba_9
+    costo = reserva1.confirmar(impuesto=19, descuento=10)
+            ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'confirmar'
+2026-11-22 02:46:49,041 - ERROR - OPERACION 10: Procesar reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 498, in prueba_10
+    reserva1.procesar()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'procesar'
+2026-11-22 02:46:49,043 - ERROR - OPERACION 11: Crear reserva con duracion incorrecta: Debe seleccionar un cliente valido.
+2026-11-22 02:46:49,043 - ERROR - OPERACION 12: Intentar reservar servicio no disponible: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 515, in prueba_12
+    sistema.registrar_servicio(servicio)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:46:49,047 - ERROR - OPERACION 13: Cancelar una reserva: Debe seleccionar un cliente valido.
+2026-11-22 02:47:01,683 - ERROR - OPERACION 1: Registrar cliente valido: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 405, in prueba_1
+    cliente1 = Cliente(
+        "1001", "Carlos Perez",
+        "carlos@gmail.com", "3001234567"
+    )
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 72, in __init__
+    super().__init_(identificacion)
+    ^^^^^^^^^^^^^^^
+AttributeError: 'super' object has no attribute '_Cliente__init_'
+2026-11-22 02:47:01,686 - ERROR - OPERACION 2: Registrar cliente con correo invalido: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 417, in prueba_2
+    cliente = Cliente(
+        "1002", "Maria Lopez",
+        "correoIncorrecto", "3101234567"
+    )
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 72, in __init__
+    super().__init_(identificacion)
+    ^^^^^^^^^^^^^^^
+AttributeError: 'super' object has no attribute '_Cliente__init_'
+2026-11-22 02:47:01,687 - ERROR - OPERACION 3: Registrar segundo cliente: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 429, in prueba_3
+    cliente2 = Cliente(
+        "1003", "Ana Rodriguez",
+        "ana@gmail.com", "3114567890"
+    )
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 72, in __init__
+    super().__init_(identificacion)
+    ^^^^^^^^^^^^^^^
+AttributeError: 'super' object has no attribute '_Cliente__init_'
+2026-11-22 02:47:01,688 - INFO - Servicio agregado: Sala de reuniones
+2026-11-22 02:47:01,689 - ERROR - OPERACION 5: Crear servicio de equipos: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 453, in prueba_5
+    sistema.registrar_servicio(equipo)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:47:01,690 - ERROR - OPERACION 6: Crear servicio de asesoria: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 463, in prueba_6
+    sistema.registrar_servicio(asesoria)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:47:01,692 - ERROR - OPERACION 7: Crear servicio con tarifa incorrecta: La tarifa debe ser un numero mayor que cero.
+2026-11-22 02:47:01,692 - ERROR - OPERACION 8: Crear reserva correctamente: Debe seleccionar un cliente valido.
+2026-11-22 02:47:01,693 - ERROR - OPERACION 9: Confirmar reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 489, in prueba_9
+    costo = reserva1.confirmar(impuesto=19, descuento=10)
+            ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'confirmar'
+2026-11-22 02:47:01,694 - ERROR - OPERACION 10: Procesar reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 498, in prueba_10
+    reserva1.procesar()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'procesar'
+2026-11-22 02:47:01,695 - ERROR - OPERACION 11: Crear reserva con duracion incorrecta: Debe seleccionar un cliente valido.
+2026-11-22 02:47:01,696 - ERROR - OPERACION 12: Intentar reservar servicio no disponible: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 515, in prueba_12
+    sistema.registrar_servicio(servicio)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:47:01,698 - ERROR - OPERACION 13: Cancelar una reserva: Debe seleccionar un cliente valido.
+2026-11-22 02:52:24,366 - INFO - Cliente registrado: Carlos Perez
+2026-11-22 02:52:24,366 - INFO - Cliente agregado al sistema.
+2026-11-22 02:52:24,367 - ERROR - OPERACION 1: Registrar cliente valido: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 410, in prueba_1
+    print(cliente1.mostrar_informacion())
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 99, in mostrar_informacion
+    f"Identificacion: {self.identificacion}\n"
+                       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Cliente' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 02:52:24,369 - ERROR - OPERACION 2: Registrar cliente con correo invalido: El correo electronico no es valido.
+2026-11-22 02:52:24,370 - INFO - Cliente registrado: Ana Rodriguez
+2026-11-22 02:52:24,370 - ERROR - OPERACION 3: Registrar segundo cliente: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 433, in prueba_3
+    sistema.registrar_cliente(cliente2)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 307, in registrar_cliente
+    if any(c.identificacion == cliente.identificacion for c in self.clientes):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 307, in <genexpr>
+    if any(c.identificacion == cliente.identificacion for c in self.clientes):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'Cliente' object has no attribute 'identificacion'
+2026-11-22 02:52:24,373 - INFO - Servicio agregado: Sala de reuniones
+2026-11-22 02:52:24,374 - ERROR - OPERACION 5: Crear servicio de equipos: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 453, in prueba_5
+    sistema.registrar_servicio(equipo)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:52:24,375 - ERROR - OPERACION 6: Crear servicio de asesoria: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 463, in prueba_6
+    sistema.registrar_servicio(asesoria)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:52:24,377 - ERROR - OPERACION 7: Crear servicio con tarifa incorrecta: La tarifa debe ser un numero mayor que cero.
+2026-11-22 02:52:24,377 - INFO - Reserva R01 creada.
+2026-11-22 02:52:24,378 - INFO - Reserva agregada al sistema.
+2026-11-22 02:52:24,379 - ERROR - OPERACION 8: Crear reserva correctamente: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 482, in prueba_8
+    print(reserva1.mostrar_informacion())
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 282, in mostrar_informacion
+    f"Reserva: {self.identificacion}\n"
+                ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Reserva' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 02:52:24,380 - ERROR - OPERACION 9: Confirmar reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 489, in prueba_9
+    costo = reserva1.confirmar(impuesto=19, descuento=10)
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 257, in confirmar
+    logging.info("Reserva %s confirmada.", self.identificacion)
+                                           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Reserva' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 02:52:24,381 - ERROR - OPERACION 10: Procesar reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 498, in prueba_10
+    reserva1.procesar()
+    ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 277, in procesar
+    logging.info("Reserva %s procesada.", self.identificacion)
+                                          ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Reserva' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 02:52:24,382 - ERROR - OPERACION 11: Crear reserva con duracion incorrecta: El tiempo de alquiler debe ser mayor que cero.
+2026-11-22 02:52:24,383 - ERROR - OPERACION 12: Intentar reservar servicio no disponible: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 515, in prueba_12
+    sistema.registrar_servicio(servicio)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 318, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 02:52:24,385 - INFO - Reserva R04 creada.
+2026-11-22 02:52:24,385 - ERROR - OPERACION 13: Cancelar una reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 366, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 529, in prueba_13
+    sistema.registrar_reserva(reserva)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 329, in registrar_reserva
+    if any(r.identificacion == reserva.identificacion for r in self.reservas):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 329, in <genexpr>
+    if any(r.identificacion == reserva.identificacion for r in self.reservas):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'Reserva' object has no attribute 'identificacion'
+2026-11-22 03:02:30,505 - INFO - Cliente registrado: Carlos Perez
+2026-11-22 03:02:30,506 - INFO - Cliente agregado al sistema.
+2026-11-22 03:02:30,506 - ERROR - OPERACION 1: Registrar cliente valido: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 365, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 409, in prueba_1
+    print(cliente1.mostrar_informacion())
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 99, in mostrar_informacion
+    f"Identificacion: {self.identificacion}\n"
+                       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Cliente' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 03:02:30,508 - ERROR - OPERACION 2: Registrar cliente con correo invalido: El correo electronico no es valido.
+2026-11-22 03:02:30,509 - INFO - Cliente registrado: Ana Rodriguez
+2026-11-22 03:02:30,509 - ERROR - OPERACION 3: Registrar segundo cliente: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 365, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 432, in prueba_3
+    sistema.registrar_cliente(cliente2)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 306, in registrar_cliente
+    if any(c.identificacion == cliente.identificacion for c in self.clientes):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 306, in <genexpr>
+    if any(c.identificacion == cliente.identificacion for c in self.clientes):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'Cliente' object has no attribute 'identificacion'
+2026-11-22 03:02:30,511 - INFO - Servicio agregado: Sala de reuniones
+2026-11-22 03:02:30,512 - ERROR - OPERACION 5: Crear servicio de equipos: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 365, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 452, in prueba_5
+    sistema.registrar_servicio(equipo)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 317, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 317, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 03:02:30,514 - ERROR - OPERACION 6: Crear servicio de asesoria: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 365, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 462, in prueba_6
+    sistema.registrar_servicio(asesoria)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 317, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 317, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 03:02:30,516 - ERROR - OPERACION 7: Crear servicio con tarifa incorrecta: La tarifa debe ser un numero mayor que cero.
+2026-11-22 03:02:30,517 - INFO - Reserva R01 creada.
+2026-11-22 03:02:30,517 - INFO - Reserva agregada al sistema.
+2026-11-22 03:02:30,518 - ERROR - OPERACION 8: Crear reserva correctamente: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 365, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 481, in prueba_8
+    print(reserva1.mostrar_informacion())
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 281, in mostrar_informacion
+    f"Reserva: {self.identificacion}\n"
+                ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Reserva' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 03:02:30,520 - ERROR - OPERACION 9: Confirmar reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 365, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 488, in prueba_9
+    costo = reserva1.confirmar(impuesto=19, descuento=10)
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 256, in confirmar
+    logging.info("Reserva %s confirmada.", self.identificacion)
+                                           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Reserva' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 03:02:30,521 - ERROR - OPERACION 10: Procesar reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 365, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 497, in prueba_10
+    reserva1.procesar()
+    ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 276, in procesar
+    logging.info("Reserva %s procesada.", self.identificacion)
+                                          ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Reserva' object has no attribute 'identificacion'. Did you mean: '_identificacion'?
+2026-11-22 03:02:30,527 - ERROR - OPERACION 11: Crear reserva con duracion incorrecta: El tiempo de alquiler debe ser mayor que cero.
+2026-11-22 03:02:30,529 - ERROR - OPERACION 12: Intentar reservar servicio no disponible: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 365, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 514, in prueba_12
+    sistema.registrar_servicio(servicio)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 317, in registrar_servicio
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 317, in <genexpr>
+    if any(s.identificacion == servicio.identificacion for s in self.servicios):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'ReservaSala' object has no attribute 'identificacion'
+2026-11-22 03:02:30,531 - INFO - Reserva R04 creada.
+2026-11-22 03:02:30,531 - ERROR - OPERACION 13: Cancelar una reserva: error inesperado
+Traceback (most recent call last):
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 365, in ejecutar_operacion
+    operacion()
+    ~~~~~~~~~^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 528, in prueba_13
+    sistema.registrar_reserva(reserva)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 328, in registrar_reserva
+    if any(r.identificacion == reserva.identificacion for r in self.reservas):
+       ^^^
+  File "c:\Users\Marlon Almario\Downloads\UNAD\5. QUINTO SEMESTRE\5. Programación\Tarea 3\fase_4\fase_4_programacion.py", line 328, in <genexpr>
+    if any(r.identificacion == reserva.identificacion for r in self.reservas):
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'Reserva' object has no attribute 'identificacion'
+2026-11-22 03:12:07,787 - INFO - Cliente registrado: Carlos Perez
+2026-11-22 03:12:07,787 - INFO - Cliente agregado al sistema.
+2026-11-22 03:12:07,788 - ERROR - OPERACION 2: Registrar cliente con correo invalido: El correo electronico no es valido.
+2026-11-22 03:12:07,789 - INFO - Cliente registrado: Ana Rodriguez
+2026-11-22 03:12:07,789 - INFO - Cliente agregado al sistema.
+2026-11-22 03:12:07,790 - INFO - Servicio agregado: Sala de reuniones
+2026-11-22 03:12:07,790 - INFO - Servicio agregado: Computador portatil
+2026-11-22 03:12:07,791 - INFO - Servicio agregado: Asesoria informatica
+2026-11-22 03:12:07,792 - ERROR - OPERACION 7: Crear servicio con tarifa incorrecta: La tarifa debe ser un numero mayor que cero.
+2026-11-22 03:12:07,792 - INFO - Reserva R01 creada.
+2026-11-22 03:12:07,792 - INFO - Reserva agregada al sistema.
+2026-11-22 03:12:07,793 - INFO - Reserva R01 confirmada.
+2026-11-22 03:12:07,795 - INFO - Reserva R01 procesada.
+2026-11-22 03:12:07,796 - ERROR - OPERACION 11: Crear reserva con duracion incorrecta: El tiempo de alquiler debe ser mayor que cero.
+2026-11-22 03:12:07,796 - INFO - Servicio agregado: Asesoria avanzada
+2026-11-22 03:12:07,796 - INFO - Reserva R03 creada.
+2026-11-22 03:12:07,796 - INFO - Reserva agregada al sistema.
+2026-11-22 03:12:07,797 - ERROR - OPERACION 12: Intentar reservar servicio no disponible: El servicio no se encuentra disponible.
+2026-11-22 03:12:07,797 - INFO - Reserva R04 creada.
+2026-11-22 03:12:07,797 - INFO - Reserva agregada al sistema.
+2026-11-22 03:12:07,797 - INFO - Reserva R04 cancelada.

@@ -57,6 +57,10 @@ class Entidad(ABC):
             raise DatoInvalidoError("La identificacion es obligatoria.")
 
         self._identificacion = identificacion.strip()
+        
+    @property
+    def identificacion(self):
+        return self._identificacion
 
     @abstractmethod
     def mostrar_informacion(self):
@@ -164,7 +168,7 @@ class Servicio(Entidad):
 
     def mostrar_informacion(self):
         return (
-            f"Codigo: {self.identificacion}\n"
+            f"Codigo: {self._identificacion}\n"
             f"Servicio: {self.nombre}\n"
             f"Descripcion: {self.descripcion()}\n"
             f"Tarifa por hora: ${self.tarifa:,.2f}\n"
@@ -235,7 +239,6 @@ class Reserva(Entidad):
         self.costo = 0
 
         logging.info("Reserva %s creada.", identificacion)
-
 
     def confirmar(self, impuesto=0, descuento=0):
         if self.estado != "Pendiente":
@@ -387,6 +390,12 @@ def ejecutar_operacion(descripcion, operacion):
 def ejecutar_pruebas():
 
     sistema = GestorSistema()
+    cliente1 = None
+    cliente2 = None
+    sala = None
+    equipo = None
+    asesoria = None
+    reserva1 = None
 
     print("\n" + "=" * 60)
     print("     PRUEBAS DEL SISTEMA INTEGRAL SOFTWARE FJ")
@@ -395,7 +404,7 @@ def ejecutar_pruebas():
     # OPERACION 1: Registro de cliente valido
 
     def prueba_1():
-        global cliente1
+        nonlocal cliente1
         cliente1 = Cliente(
             "1001", "Carlos Perez",
             "carlos@gmail.com", "3001234567"
@@ -419,7 +428,7 @@ def ejecutar_pruebas():
     # OPERACION 3: Registrar segundo cliente valido
 
     def prueba_3():
-        global cliente2
+        nonlocal cliente2
         cliente2 = Cliente(
             "1003", "Ana Rodriguez",
             "ana@gmail.com", "3114567890"
@@ -432,7 +441,7 @@ def ejecutar_pruebas():
     # OPERACION 4: Crear servicio de salas
 
     def prueba_4():
-        global sala
+        nonlocal sala
         sala = ReservaSala("S01", "Sala de reuniones", 50000)
         sistema.registrar_servicio(sala)
         print(sala.mostrar_informacion())
@@ -442,7 +451,7 @@ def ejecutar_pruebas():
     # OPERACION 5: Crear servicio de equipos
 
     def prueba_5():
-        global equipo
+        nonlocal equipo
         equipo = AlquilerEquipo("S02", "Computador portatil", 30000)
         sistema.registrar_servicio(equipo)
         print(equipo.mostrar_informacion())
@@ -452,7 +461,7 @@ def ejecutar_pruebas():
     # OPERACION 6: Crear servicio de asesoria
 
     def prueba_6():
-        global asesoria
+        nonlocal asesoria
         asesoria = Asesoria("S03", "Asesoria informatica", 80000)
         sistema.registrar_servicio(asesoria)
         print(asesoria.mostrar_informacion())
@@ -470,7 +479,7 @@ def ejecutar_pruebas():
     # OPERACION 8: Crear y registrar una reserva
 
     def prueba_8():
-        global reserva1
+        nonlocal reserva1
         reserva1 = Reserva("R01", cliente1, sala, 2)
         sistema.registrar_reserva(reserva1)
         print(reserva1.mostrar_informacion())
