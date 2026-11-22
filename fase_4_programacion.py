@@ -58,6 +58,9 @@ class Entidad(ABC):
 
         self._identificacion = identificacion.strip()
 
+    @property
+    def identificacion(self):
+        return self._identificacion
     @abstractmethod
     def mostrar_informacion(self):
         pass
