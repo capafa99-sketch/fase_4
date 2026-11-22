@@ -1,7 +1,7 @@
 SOFTWARE FJ
 Sistema Integral de Gestión de Clientes, Servicios y Reservas
 
-estudiante:cristian camilo gelvez guzman
+estudiantes:cristian camilo gelvez guzman y marlon fabian almario chacon
 Curso:Programación  
 Código:213023_524
 Actividad:Fase 4 - Prácticas simuladas  
